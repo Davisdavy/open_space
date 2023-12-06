@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:on_space/user/models/location.dart';
+import 'package:on_space/features/user/models/location.dart';
 
 part 'user.g.dart';
 

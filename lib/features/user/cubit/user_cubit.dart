@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:bloc/bloc.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:http/http.dart' as http;
-import 'package:on_space/user/models/user.dart';
+import 'package:on_space/features/user/models/user.dart';
 
 abstract class UserEvent {}
 

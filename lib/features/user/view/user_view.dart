@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:on_space/l10n/l10n.dart';
-import 'package:on_space/user/cubit/user_cubit.dart';
+import 'package:on_space/features/user/cubit/user_cubit.dart';
 
 class UserView extends StatelessWidget {
   const UserView({required this.userCubit, super.key});
@@ -14,7 +13,7 @@ class UserView extends StatelessWidget {
       body: BlocBuilder<UserCubit, UserState>(
         builder: (context, state) {
           if (state is LoadingUserState) {
-            return Center(child: CircularProgressIndicator());
+            return const Center(child: CircularProgressIndicator());
           } else if (state is LoadedUserState) {
             return ListView.builder(
               itemCount: state.users.length,
@@ -32,7 +31,7 @@ class UserView extends StatelessWidget {
           } else if (state is ErrorUserState) {
             return Center(child: Text('Error: ${state.message}'));
           } else {
-            return Center(child: Text('No data'));
+            return const Center(child: Text('No data'));
           }
         },
       ),
