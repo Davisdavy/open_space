@@ -18,8 +18,8 @@ jobs:
 
   build:
   uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
-    with:
-      flutter_channel: stable
+  with:
+    flutter_channel: stable
     - run: flutter pub get
     - run: flutter format --set-exit-if-changed .
     - run: flutter analyze .
