@@ -7,10 +7,10 @@ concurrency:
 on:
   push:
     branches:
-      - main
+      - user_cubit
   pull_request:
     branches:
-      - main
+      - user_cubit
 
 jobs:
   semantic-pull-request:
