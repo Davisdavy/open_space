@@ -17,10 +17,10 @@ jobs:
     uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/semantic_pull_request.yml@v1
 
   build:
+    steps:
     uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
     with:
       flutter_channel: stable
-    steps:
     - run: flutter pub get
     - run: flutter format --set-exit-if-changed .
     - run: flutter analyze .
@@ -28,7 +28,7 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: release-apk
-        path: build/app/outputs/apk/release/app-release.apk
+          path: build/app/outputs/apk/release/app-release.apk
 
   spell-check:
     uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/spell_check.yml@v1
