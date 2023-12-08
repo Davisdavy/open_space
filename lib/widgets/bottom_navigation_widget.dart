@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:on_space/constants/app_colors.dart';
 import 'package:on_space/features/chat/view/chat_view.dart';
 import 'package:on_space/features/driving/view/driving_view.dart';
+import 'package:on_space/features/location_history/user.dart';
 import 'package:on_space/features/safety/view/safety_view.dart';
-import 'package:on_space/features/user/user.dart';
 import 'package:on_space/widgets/regular_text_widget.dart';
+
 
 class BottomNavigationWidget extends StatefulWidget {
    const BottomNavigationWidget({super.key});
@@ -15,7 +16,7 @@ class BottomNavigationWidget extends StatefulWidget {
 
 class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
   int pageIndex = 0;
-  final UserCubit _userCubit = UserCubit();
+  final LocationCubit _userCubit = LocationCubit();
 
 
   @override
@@ -33,7 +34,7 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
       body: pages[pageIndex],
       bottomNavigationBar: SafeArea(
         child: Container(
-          padding: const EdgeInsets.all(12),
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
           margin: const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
           decoration:  BoxDecoration(
             color:Colors.white,

@@ -23,6 +23,9 @@ dev_dependencies:
   bloc_test: ^9.1.4
   build_runner: ^2.4.7
   json_serializable: ^6.7.1
+  page_transition: ^2.1.0
+  timeago: ^3.6.0
+  cached_network_image: ^3.3.0
   flutter_test:
     sdk: flutter
   mocktail: ^1.0.0
@@ -31,3 +34,6 @@ dev_dependencies:
 flutter:
   uses-material-design: true
   generate: true
+  assets:
+    - assets/style/
+    - assets/images/
