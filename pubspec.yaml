@@ -20,7 +20,7 @@ dependencies:
   intl: ^0.18.0
 
 dev_dependencies:
-  bloc_test: ^9.1.4
+  bloc_test: ^9.1.6
   build_runner:
   flutter_test:
     sdk: flutter
