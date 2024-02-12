@@ -10,7 +10,7 @@ dependencies:
   bloc: ^8.1.2
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.1.3
+  flutter_bloc: ^8.1.4
   http: ^1.1.2
   equatable:
   json_annotation: ^4.8.1
